@@ -1,0 +1,149 @@
+body {
+  background: #2A2B2B;
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+}
+
+.reveal strong {
+  color: #30BF30
+}
+
+.reveal b {
+  color: #30BF30
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  text-transform: none;
+  line-height: 1em;
+  letter-spacing: -0.06em;
+}
+
+.reveal h1 {
+  font-weight: bold;
+}
+
+.reveal h2 {
+    margin-top: 1em;
+}
+
+.reveal h3 {
+    margin-bottom: 0.5em;
+}
+.reveal h3.fin {
+    margin-top: 2em;
+}
+.reveal h3.questions {
+    color:red;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.reveal h4 {
+  color: #30BF30
+}
+
+.reveal pre code {
+  max-height: 800px;
+}
+
+.reveal code {
+  font-size: 82%;
+}
+
+.reveal .caption {
+  font-size: small;
+}
+
+.reveal .author {
+    margin-top: 2em;
+    font-size: smaller;
+}
+
+.reveal li {
+    padding-left: 0.25em;
+    line-height: 1.25em;
+    margin-bottom: 0.35em;
+}
+
+/*  Images */
+.reveal section img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+/*  Second level lists  */
+.reveal ul ul {
+    color: #30BF30;
+    list-style-type: circle;
+    margin-top: 0.25em;
+}
+
+/* Third level lists */
+.reveal ul ul ul {
+    color: #6AC1C1;
+    list-style-type: square;
+    margin-top: 0.25em;
+}
+
+/*  Source Code  */
+.reveal pre {
+    font-size: 0.8em;
+}
+
+/*********************************************
+ * Header Bar
+ ********************************************/
+
+.reveal div.topbar {
+  background: #344742;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: -1;
+  margin-top: 20px;
+  border-radius: 50px;
+  moz-border-radius: 5px;
+  webkit-border-radius: 5px;
+}
+
+/* Normal Header Bar */
+.reveal div.topbar .logo {
+  //background: #4EA000;
+  //border-left: solid #30BF30 10px;
+  //border-right: solid #30BF30 10px;
+  padding: margin 10px;
+  //border-radius: 15px;
+  padding: 5px;
+  moz-border-radius: 15px;
+  webkit-border-radius: 15px;
+  position: absolute;
+  top: -4px;
+  right: 1em;
+}
+
+/* Printed Header Bar */
+.reveal section div.topbar .logo {
+  top: -16px;
+  box-shadow: none;
+}
+
+.reveal .header_title {
+  position: relative;
+  color: #4EA000;
+  font-weight: bold;
+  text-shadow: none;
+  vertical-align: middle;
+  line-height: 80px;
+  font-size: 0.8em;
+  text-align: center; // Remove this and uncomment the following for a left alignment
+  //padding-left: 20px;
+}

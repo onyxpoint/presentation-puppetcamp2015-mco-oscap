@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title><%= TITLE %></title>
+
+    <meta name="description" content="<%= DESCRIPTION %>">
+    <meta name="author" content="<%= AUTHOR %>">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <!-- Custom theme modifications -->
+    <link rel="stylesheet" href="css/theme/custom.css" id="custom_theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      if ( window.location.search.match( /print-pdf/gi ) ) {
+        document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+        document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script>
+      // Title for the header bar.
+      var header_title = "<%= GLOBAL_HEADER %>";
+      var header_logo = "images/header_logo.svg";
+    </script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="topbar">
+        <h1 class="header_title">
+          <script>document.write(header_title)</script>
+        </h1>
+        <script>document.write('<image class="logo" src="' + header_logo + '"/>')</script>
+      </div>
+      <div class="slides">
+<%= slides %>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <!-- Include JQuery -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Configuration Options -->
+    <script src="js/configuration.js"></script>
+  </body>
+</html>
